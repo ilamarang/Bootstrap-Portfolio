@@ -89,7 +89,6 @@ a.active {
 }
 h1,
 h2,
-h4,
 h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -154,18 +153,27 @@ padding-bottom: 0.25em;
 
   margin-bottom: 1em;
 }
-.fixOverlayDiv{
-    position: relative;
-    width:100%; 
-    padding:0px;
-}
-.OverlayText{
-     background-color: #000;
-    bottom: 0;
-    color: #fff;
-    left: 0;
-    opacity: 0.5;
-    position: absolute;
-    width: 100%;
-}
 
+    .caption {
+        width:80%;
+        bottom: .8rem;
+        position: absolute;
+
+
+        
+    }
+
+    .thumbnail {
+        border: 0 none;
+        box-shadow: none;
+        margin:0;
+        padding:0;
+    }
+
+    .caption h4 {
+        color: #fff;
+       
+    }
+    .thumbnail .caption {
+        padding:0.1em;
+    }
