@@ -1,4 +1,10 @@
 
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
@@ -19,14 +25,12 @@ a.active {
   color: #18BC9C;
 }
 
-
-
-
 .navbar-custom {
   background: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: none;
+  border-bottom: 0.25em solid grey;
 }
 .navbar-custom .navbar-brand {
   color: white;
@@ -51,7 +55,7 @@ a.active {
   color: white;
 }
 .navbar-custom .navbar-nav li.active a {
-  
+
   background: #18BC9C;
 }
 .navbar-custom .navbar-nav li.active a:hover,
@@ -61,7 +65,7 @@ a.active {
   background: #18BC9C;
 }
 .navbar-custom .navbar-toggle {
-  
+
   text-transform: uppercase;
   font-size: 10px;
   border-color: white;
@@ -74,7 +78,7 @@ a.active {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    
+
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -89,6 +93,7 @@ a.active {
 }
 h1,
 h2,
+h4,
 h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -98,17 +103,26 @@ h6 {
 }
 
 .navbar-brand {
-background-color: teal;
+  background-color: teal;
 
 }
-body { padding-top: 80px; }
+body { 
+  padding-top: 80px; 
+
+}
 .media-body a {
   float: left;
   margin-right: 15px;
   margin-bottom: 2px
+  
 }
+.profile_image {
+
+  float:left;
+}
+
 img {
-	float:left;
+	
 	margin-right:1em;
 }
 .border {
@@ -116,64 +130,91 @@ img {
 
 }
 h3 {
-border-bottom: 1px solid #eaeaea;
-padding-bottom: 0.25em;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 0.25em;
 
 }
 .main_content,.social_media{
 
 	background-color: white;
   margin-bottom: 2em;
+
 }
 
 .navbar-fixed-bottom {
 	background-color: grey;
-	
+  border-top: 0.5em solid teal;
+
+
 }
 .navbar-default .navbar-text {
 
 	color:black;
+  
 }
-.test {
-    position: relative;
-}
-.caption {
-    position: absolute;
-    bottom: 15%;
-    left: 0;
-    width: 100%;
-    background-color: teal;
-}
-.card {
 
-
-}
 
 .with-margin {
 
   margin-bottom: 1em;
 }
 
-    .caption {
-        width:100%;
-        bottom: .8rem;
-        position: absolute;
+.caption {
+  width:100%;
+  bottom: .8rem;
+  position: absolute;
 
 
-        
-    }
 
-    .thumbnail {
-        border: 0 none;
-        box-shadow: none;
-        margin:0;
-        padding:0;
-    }
 
-    .caption h4 {
-        color: #fff;
-       
-    }
-    .thumbnail .caption {
-        padding:0.1em;
-    }
+}
+.navbar-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.thumbnail {
+  border: 0 none;
+  box-shadow: none;
+  margin:0;
+  padding:0;
+
+
+
+}
+
+.caption h4 {
+  color: #fff;
+
+}
+.thumbnail .caption {
+  padding:0.1em;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -40px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 40px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
