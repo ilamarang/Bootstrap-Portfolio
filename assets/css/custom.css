@@ -3,6 +3,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   background-image: url("../images/cork-wallet.png");
+
 }
 p {
   font-size: 15px;
@@ -101,7 +102,7 @@ h6 {
 background-color: teal;
 
 }
-body { padding-top: 120px; }
+body { padding-top: 80px; }
 .media-body a {
   float: left;
   margin-right: 15px;
@@ -123,6 +124,7 @@ padding-bottom: 0.25em;
 .main_content,.social_media{
 
 	background-color: white;
+  margin-bottom: 2em;
 }
 
 .navbar-fixed-bottom {
@@ -133,3 +135,37 @@ padding-bottom: 0.25em;
 
 	color:black;
 }
+.test {
+    position: relative;
+}
+.caption {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 100%;
+    background-color: teal;
+}
+.card {
+
+
+}
+
+.with-margin {
+
+  margin-bottom: 1em;
+}
+.fixOverlayDiv{
+    position: relative;
+    width:100%; 
+    padding:0px;
+}
+.OverlayText{
+     background-color: #000;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+}
+
